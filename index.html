@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Necotistan Login Page</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #222;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #555;
+        border-radius: 3px;
+        background-color: #444;
+        color: #fff;
+    }
+    
+    .form-group button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="ID">ID</label>
+                <input type="text" id="ID" name="ID" placeholder="Enter your ID">
+            </div>
+            <div class="form-group">
+                <button type="submit" onclick="checkID()">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function checkID() {
+            var input = document.getElementById("ID").value;
+            if (input === "123456") {
+                document.body.innerHTML = "<h2>Welcome, 123456!</h2>";
+                
+                
+            }
+            if (input === "654321") {
+                document.body.innerHTML = "<h2>Welcome, 654321!</h2>";
+
+                
+            }
+        }
+    </script>
+</body>
+</html>
